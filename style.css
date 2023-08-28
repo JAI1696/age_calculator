@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color:hsl(0, 0%, 86%);
+   
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border-bottom-right-radius: 100px;
+}
+
+.fix{
+    display: flex;
+    gap: 20px;
+}
+
+label{
+    font-size: 6px;
+    letter-spacing: 2px;
+    color : gray;
+    font-weight: 800;
+}
+
+input{
+    width: 50px;
+    border-radius: 5px;
+    
+}
+input:focus{
+    outline: none;
+    border-color: hsl(259, 100%, 65%);
+}
+
+.input-control.success input {
+    border-color: lightgreen;
+}
+
+.input-control.error input {
+    border-color:  hsl(0, 100%, 67%);
+} 
+.input-control.error label {
+    color:  hsl(0, 100%, 67%);
+}
+.input-control.success label {
+    color: black;
+}
+
+.input-control .error {
+    border-color:  hsl(0, 100%, 67%);
+    font-size: 9px;
+    height: 13px;
+    color: hsl(0, 100%, 67%);
+} 
+
+.for{
+    position: relative;
+    border-bottom: 1.5px solid lightgray;
+    width: 90%;
+
+}
+button{
+    position: absolute;
+    right: 0px;
+    top:55px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(224, 16, 235, 0.863);
+    border-radius: 50%;
+    padding: 3px;
+    border-color: white;
+}
+
+
+
+p{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+span{
+    color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width : 375px) {
+    
+    button{
+        position: absolute;
+        right: 50%;
+        top:55px;}
+}
